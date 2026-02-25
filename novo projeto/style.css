@@ -1,0 +1,55 @@
+body{ 
+    display:grid;
+    grid-template-areas:
+    "cabeca cabeca"
+    "braco braco"
+    "corpo corpo"
+    "pe pe";
+    grid-template-rows: 100px 500px 180px;
+    grid-template-columns: 1fr 2fr;
+    
+}
+@media only screen and (max-width: 100px)
+    
+
+ 
+
+
+ 
+    
+
+
+
+
+
+
+
+
+header{
+
+    background-color: red;
+    grid:cabeca
+}
+aside{
+
+    background-color: yellow;
+    grid:braco
+}
+
+footer{
+
+    background-color: blueviolet;
+    grid:corpo
+
+}
+main{
+
+    background-color: chartreuse;
+    grid:pe
+
+}
+
+
+     
+    
+
