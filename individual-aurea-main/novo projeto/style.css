@@ -1,0 +1,61 @@
+ header{
+    grid-area: cabeca;
+    background-color: aqua;
+
+}
+main{
+    grid-area: corpo;
+    background-color: black;
+}
+
+aside{
+    grid-area: braco;
+    background-color: blue;
+}
+
+footer{
+    grid-area: peh;
+    background-color: coral;
+
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "cabeca cabeca"
+    "braco corpo"
+    "peh peh";
+    grid-template-rows: 180px 500px 180px;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+ 
+ 
+ @media only screen and (max-width: 850px){
+    body{
+        display:grid; 
+        grid-template-areas :
+        "cabeca"
+        "braco"
+        "corpo"
+        "peh";
+    grid-template-rows: 180px 180px 500px 180px;
+    grid-template-columns: auto;
+
+ }
+}
+
+@media only screen and(max-width: 450px){
+     body{
+ display:grid; 
+ grid-template-areas :
+ "cabeca"
+ "corpo"
+ "braco"
+ "peh";
+ grid-template-rows: 180px 180px auto 180px;
+ grid-template-columns:auto ;
+
+ }
+}
